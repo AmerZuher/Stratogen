@@ -3,7 +3,7 @@
 [![Backend](https://img.shields.io/badge/Backend-FastAPI-009688?logo=fastapi)](#-architecture)
 [![Frontend](https://img.shields.io/badge/Frontend-React%20%2B%20Vite-61dafb?logo=react)](#-architecture)
 [![Database](https://img.shields.io/badge/Database-PostgreSQL-336791?logo=postgresql)](#-architecture)
-[![License](https://img.shields.io/badge/License-MIT-blue)](Backend/pyproject.toml)
+[![License](https://img.shields.io/badge/License-MIT-blue)](LICENSE)
 
 ---
 
@@ -297,7 +297,7 @@ An **embedded AI co-pilot** that enhances productivity through contextual insigh
 
 ## 📜 License
 
-Licensed under the **MIT License**.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
