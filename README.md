@@ -120,7 +120,7 @@ PPM/
 ### 1️⃣ Clone the repository
 
 ```bash
-git clone https://github.com/AmerZuher/stratogen.git
+git clone https://github.com/AmerZuher/Stratogen.git
 cd stratogen
 ```
 
