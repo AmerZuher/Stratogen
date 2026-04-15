@@ -1,0 +1,78 @@
+[tool.uv]
+# uv-specific configurations
+# lockfile = "uv.lock"
+[project]
+name = "Stratogen"
+version = "0.10.0"
+description = "Backend for stratogen App (FastAPI + Postgres + LLM-ready)"
+authors = [
+    { name = "Amer Zuher", email = "ameralreahy@gmail.com" },
+]
+readme = "README.md"
+requires-python = ">=3.11, <3.14"
+license = "MIT"
+
+dependencies = [
+    # Core FastAPI & Server
+    "fastapi>=0.116.1",
+    "uvicorn[standard]>=0.35.0",
+    "python-dotenv>=1.1.1",
+    "pydantic[email]>=2.11.7",
+    "pydantic-settings>=2.0.0",
+    "python-multipart>=0.0.20",
+    "httpx>=0.28.1",
+    "requests>=2.0.0",
+
+    # Security & Auth
+    "python-jose[cryptography]>=3.5.0",
+    "passlib[bcrypt]>=1.7.4",
+    "bcrypt<4.1",
+    "PyJWT>=2.8.0",
+
+    # Database
+    "sqlalchemy>=2.0.43",
+    "alembic>=1.16.4",
+    "psycopg2-binary",
+    "asyncpg>=0.30.0",
+    "sqlalchemy2-stubs",
+
+    # Data Processing & ML
+    "pandas>=2.2.3",
+    "torch>=2.0.0",
+
+    # File Handling & Reporting
+    "pypandoc==1.15",
+    "PyPDF2==3.0.1",
+    "python-pptx==0.6.21",
+    "pytesseract==0.3.10",
+    "openpyxl==3.1.2",
+    "xlrd",
+    "python-docx",
+    "reportlab",
+
+    # Other
+    "pyyaml>=6.0.0",
+    "markdown-it-py"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "black",
+    "isort",
+    "mypy",
+    "flake8",
+]
+
+[tool.setuptools.packages.find]
+# Explicitly list only your actual Python packages
+include = ["app", "helpers", "config", "schema", "prompt", "Secret"]
+exclude = ["logs", "templates", "data"]
+
+[tool.mypy]
+plugins = ["sqlalchemy.ext.mypy.plugin"]
+ignore_missing_imports = true
+strict_optional = false
+
+[tool.pylance]
+typeCheckingMode = "basic"

@@ -1,0 +1,144 @@
+# FastAPI + Vite full-stack application
+
+# -------------------------
+# Python / FastAPI
+# -------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.pytest_cache/
+.python-version
+.pyre/
+.mypy_cache/
+.pytest_cache/
+.pytype/
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+backend/.venv/
+backend/env/
+backend/venv/
+Backend/.venv/
+Backend/env/
+Backend/venv/
+Backend/data/reports/**
+Backend/data/warehouse/documents/**
+# Python packaging
+pip-wheel-metadata/
+*.egg-info/
+.eggs/
+*.egg
+
+# Environment variables
+
+!.env.local
+!.env.production
+
+# -------------------------
+# Node / Vite
+# -------------------------
+node_modules/
+Frontend/node_modules/
+frontend/node_modules/
+
+# Vite build output
+dist/
+Frontend/dist/
+frontend/dist/
+
+# Vite cache
+.vite/
+Frontend/.vite/
+frontend/.vite/
+
+# npm / pnpm / yarn caches
+.npm
+.npx
+.pnpm-store
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+lerna-debug.log*
+*.log
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Optional eslint cache
+.eslintcache
+.stylelintcache
+
+# parcel cache
+.cache
+.parcel-cache
+
+# Build output
+build/
+
+# Coverage
+coverage/
+.nyc_output/
+*.lcov
+
+# -------------------------
+# Docker
+# -------------------------
+docker-compose.override.yml
+*.local.yml
+
+# -------------------------
+# IDE / Editor
+# -------------------------
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+*.swo
+*.bak
+*.tmp
+*.temp
+*.log
+.DS_Store
+Thumbs.db
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# -------------------------
+# Misc
+# -------------------------
+coverage/
+*.sqlite
+*.sqlite3
+*.db
+npm-debug.log*
+yarn-debug.log*
+package-lock.json
+pnpm-lock.yaml
+
+

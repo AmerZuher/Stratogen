@@ -1,0 +1,70 @@
+/* generated using openapi-typescript-codegen -- do not edit */
+/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+export { ApiError } from './core/ApiError';
+export { CancelablePromise, CancelError } from './core/CancelablePromise';
+export { OpenAPI } from './core/OpenAPI';
+export type { OpenAPIConfig } from './core/OpenAPI';
+
+export type { Body_bulk_upload_documents_api_documents_bulk_upload__investment_id__post } from './models/Body_bulk_upload_documents_api_documents_bulk_upload__investment_id__post';
+export type { Body_login_for_access_token_api_auth_login_post } from './models/Body_login_for_access_token_api_auth_login_post';
+export type { Body_upload_document_api_documents__investment_id__upload_post } from './models/Body_upload_document_api_documents__investment_id__upload_post';
+export type { ChatRequest } from './models/ChatRequest';
+export type { ChatResponse } from './models/ChatResponse';
+export type { ConversationCreate } from './models/ConversationCreate';
+export type { ConversationResponse } from './models/ConversationResponse';
+export type { ConversationUpdate } from './models/ConversationUpdate';
+export type { DocumentResponse } from './models/DocumentResponse';
+export type { FeedbackCreate } from './models/FeedbackCreate';
+export type { FeedbackResponse } from './models/FeedbackResponse';
+export type { FeedbackUpdate } from './models/FeedbackUpdate';
+export type { HTTPValidationError } from './models/HTTPValidationError';
+export type { IdeaResponse } from './models/IdeaResponse';
+export type { IdeaUpdate } from './models/IdeaUpdate';
+export type { InvestmentCreate } from './models/InvestmentCreate';
+export type { InvestmentResponse } from './models/InvestmentResponse';
+export type { InvestmentUpdate } from './models/InvestmentUpdate';
+export type { KPIResponse } from './models/KPIResponse';
+export type { KPIUpdate } from './models/KPIUpdate';
+export type { MessageResponse } from './models/MessageResponse';
+export type { Notification } from './models/Notification';
+export type { NotificationCreate } from './models/NotificationCreate';
+export { NotificationStatus } from './models/NotificationStatus';
+export type { NotificationTarget } from './models/NotificationTarget';
+export type { NotificationTargetCreate } from './models/NotificationTargetCreate';
+export { NotificationType } from './models/NotificationType';
+export type { NotificationUpdate } from './models/NotificationUpdate';
+export { PriorityLevel } from './models/PriorityLevel';
+export type { ProjectResponse } from './models/ProjectResponse';
+export type { ProjectUpdate } from './models/ProjectUpdate';
+export type { ReportGenerationRequest } from './models/ReportGenerationRequest';
+export type { ReportGenerationResponse } from './models/ReportGenerationResponse';
+export type { RiskIssue } from './models/RiskIssue';
+export type { RiskIssueCreate } from './models/RiskIssueCreate';
+export { RiskIssueType } from './models/RiskIssueType';
+export type { RiskIssueUpdate } from './models/RiskIssueUpdate';
+export { TargetType } from './models/TargetType';
+export type { TaskCreate } from './models/TaskCreate';
+export type { TaskResponse } from './models/TaskResponse';
+export type { TaskUpdate } from './models/TaskUpdate';
+export type { Token } from './models/Token';
+export type { UserResponse } from './models/UserResponse';
+export type { UserSummary } from './models/UserSummary';
+export type { ValidationError } from './models/ValidationError';
+export type { WorkflowActionInfo } from './models/WorkflowActionInfo';
+export type { WorkflowActionRequest } from './models/WorkflowActionRequest';
+export type { WorkflowActionResponse } from './models/WorkflowActionResponse';
+export type { WorkflowHistoryResponse } from './models/WorkflowHistoryResponse';
+export type { WorkflowResponsibleInfo } from './models/WorkflowResponsibleInfo';
+export type { WorkflowStateResponse } from './models/WorkflowStateResponse';
+export type { WorkflowStepInfo } from './models/WorkflowStepInfo';
+
+export { AiServicesService } from './services/AiServicesService';
+export { AuthenticationService } from './services/AuthenticationService';
+export { DefaultService } from './services/DefaultService';
+export { DocumentsService } from './services/DocumentsService';
+export { InvestmentsService } from './services/InvestmentsService';
+export { NotificationsService } from './services/NotificationsService';
+export { RisksIssuesService } from './services/RisksIssuesService';
+export { WorkflowsService } from './services/WorkflowsService';

@@ -1,0 +1,142 @@
+# --- Model Settings ---
+model:
+  name: mistral        # Model name registered with Ollama
+  gpu: true
+  host: http://ollama:11434  # Ollama API endpoint
+  RESPONSE_TIME_OUT: 50000
+
+
+# --- Prompts ---
+prompts:
+  rules: ./prompt/rules.md
+  report_template: ./prompt/report_template.md
+  workflow_criteria: ./prompt/workflow_criteria.md
+  summarize_report: ./prompt/summarize_report.md
+
+# --- AI Generation Settings ---
+ai:
+  max_tokens: 10024
+  temperature: 0.6
+  message_summary_threshold: 100   
+
+# --- Logging Settings ---
+logging:
+  log_dir: ./logs/
+  log_file: "{log_dir}/app.log"
+  log_level: INFO  # DEBUG, INFO, WARNING, ERROR, CRITICAL
+
+# --- Data Locations ---
+data:
+  warehouse_dir: ./data/warehouse
+  documents_dir: ./data/warehouse/documents
+  reports_dir: ./data/reports
+
+
+# --- Default Table Names ---
+tables:
+  users: users
+  departments: departments
+  investments: inv_investments
+  roles: roles
+  user_roles: user_roles
+  ideas: ideas
+  projects: projects
+  kpi: kpi
+  tasks: tasks
+  teams: teams
+  team_members: team_members
+  risks_issues: risks_issues
+  documents: documents
+  workflows: workflows
+  workflow_steps: workflow_steps
+  workflow_actions: workflow_actions
+  workflow_responsibles: workflow_responsibles
+  workflow_instances: workflow_instances
+  workflow_history: workflow_history
+  conversations: conversations
+  messages: messages
+  feedback: feedback
+
+# --- Workflow Settings ---
+workflows:
+  idea:
+    statuses:
+      - DMNDSBMSN
+      - LINEMNGAPPR
+      - ASSESMENT
+      - PROJMNGAPR
+      - REVISION
+      - CONVERTEDRFP
+      - CONVERTEDPRJ
+      - CONVERTEDSME
+      - CANCELLED
+    steps:
+      - name: Demand Submission
+        status: DMNDSBMSN
+        responsible:
+          type: USER
+          role: Requested User
+        actions:
+          Submit:
+            next_status: LINEMNGAPPR
+          Cancel:
+            next_status: CANCELLED
+
+      - name: Line Manager Approval
+        status: LINEMNGAPPR
+        responsible:
+          type: USER
+          role: Line Manager
+        actions:
+          Approve:
+            next_status: ASSESMENT
+          Send To Revision:
+            next_status: REVISION
+          Cancel:
+            next_status: CANCELLED
+
+      - name: Assessment
+        status: ASSESMENT
+        responsible:
+          type: TEAM
+          role: IT Support
+        actions:
+          Approve:
+            next_status: PROJMNGAPR
+          Cancel:
+            next_status: CANCELLED
+
+      - name: Project Manager Approval
+        status: PROJMNGAPR
+        responsible:
+          type: USER
+          role: Project Manager
+        actions:
+          Convert to SME:
+            next_status: CONVERTEDSME
+            terminal: true
+          Convert to RFP:
+            next_status: CONVERTEDRFP
+            terminal: true
+          Convert to Project:
+            next_status: CONVERTEDPRJ
+            terminal: true
+          Send To Revision:
+            next_status: REVISION
+          Cancel:
+            next_status: CANCELLED
+
+      - name: Revision
+        status: REVISION
+        responsible:
+          type: USER
+          role: Requested User
+        actions:
+          Return to Line Manager Approval:
+            condition:
+              previous_status: LINEMNGAPPR
+            next_status: LINEMNGAPPR
+          Return to Project Manager Approval:
+            condition:
+              previous_status: PROJMNGAPR
+            next_status: PROJMNGAPR

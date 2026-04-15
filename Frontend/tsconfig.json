@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    // --- Core Settings ---
+    "target": "ESNext",
+    "module": "ESNext",
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "strict": true,
+    "noEmit": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "types": ["node"],
+
+    // --- Module Resolution ---
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    
+    // --- JSX ---
+    "jsx": "react-jsx",
+
+    // --- Path Aliases ---
+    // baseUrl is removed. Paths are now relative to this file.
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": [
+    "src/**/*", 
+    "vite.config.ts", 
+    "ProtectedRoute.tsx", 
+    "vite-env.d.ts"
+  ],
+  "exclude": ["node_modules", "dist"]
+}
