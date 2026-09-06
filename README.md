@@ -6,6 +6,7 @@
 [![License](https://img.shields.io/badge/License-MIT-blue)](LICENSE)
 
 ---
+<img width="2039" height="1359" alt="Stratogen" src="https://github.com/user-attachments/assets/88a07570-a93d-4b8c-bde0-31ead04ab728" />
 
 ## ✨ Overview
 
