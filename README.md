@@ -1,12 +1,31 @@
-# 🚀 Stratogen — AI-Powered Project Portfolio Intelligence Platform
+<p align="center">
+  <img src="Stratogen_poster.png" alt="Stratogen — Clarity, control, and strategic insight" width="100%"/>
+</p>
 
-[![Backend](https://img.shields.io/badge/Backend-FastAPI-009688?logo=fastapi)](#-architecture)
-[![Frontend](https://img.shields.io/badge/Frontend-React%20%2B%20Vite-61dafb?logo=react)](#-architecture)
-[![Database](https://img.shields.io/badge/Database-PostgreSQL-336791?logo=postgresql)](#-architecture)
-[![License](https://img.shields.io/badge/License-MIT-blue)](LICENSE)
+<h1 align="center">Stratogen</h1>
+
+<p align="center">
+  <b>AI-Powered Project Portfolio Intelligence Platform</b><br/>
+  <i>Ideas / Projects / Execution</i>
+</p>
+
+<p align="center">
+  <a href="#-architecture"><img src="https://img.shields.io/badge/Backend-FastAPI-009688?logo=fastapi" alt="Backend"/></a>
+  <a href="#-architecture"><img src="https://img.shields.io/badge/Frontend-React%20%2B%20Vite-61dafb?logo=react" alt="Frontend"/></a>
+  <a href="#-architecture"><img src="https://img.shields.io/badge/Database-PostgreSQL-336791?logo=postgresql" alt="Database"/></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue" alt="License"/></a>
+</p>
+
+<p align="center">
+  <a href="#-overview">Overview</a> ·
+  <a href="#-core-capabilities">Capabilities</a> ·
+  <a href="#-architecture">Architecture</a> ·
+  <a href="#-quick-start">Quick Start</a> ·
+  <a href="#-gallery">Gallery</a> ·
+  <a href="#-roadmap">Roadmap</a>
+</p>
 
 ---
-<img width="2039" height="1359" alt="Stratogen" src="https://github.com/user-attachments/assets/88a07570-a93d-4b8c-bde0-31ead04ab728" />
 
 ## ✨ Overview
 
@@ -105,10 +124,11 @@ Stay aligned with **real-time alerts, assignments, and workflow-driven updates**
 ## 📁 Repository Structure
 
 ```text
-PPM/
+Stratogen/
 ├── Backend/                # FastAPI services, models, migrations
 ├── Frontend/              # React application
-├── IMG/                   # Product UI visuals
+├── Gallery/               # Product UI screenshots
+├── Stratogen_poster.png   # Project poster
 ├── docker-compose.yml     # Infrastructure services
 ├── ecosystem.config.js    # PM2 configuration
 └── ReleaseSummary.md      # Release notes
@@ -122,7 +142,7 @@ PPM/
 
 ```bash
 git clone https://github.com/AmerZuher/Stratogen.git
-cd stratogen
+cd Stratogen
 ```
 
 ### 2️⃣ Configure the backend environment
@@ -183,7 +203,7 @@ pm2 logs frontend
 
 ---
 
-# 🖼️ Product Experience
+# 🖼️ Gallery
 
 > Carefully designed interfaces focused on clarity, balance, and decision efficiency.
 
@@ -192,7 +212,7 @@ pm2 logs frontend
 ### 📊 Executive Dashboard
 
 <p align="center">
-  <img src="IMG/Dashboard.jpeg" width="1200"/>
+  <img src="Gallery/Dashboard.jpeg" width="900"/>
 </p>
 
 A **high-impact executive cockpit** delivering a consolidated view of portfolio health, KPIs, and strategic progress — enabling faster, data-driven decisions.
@@ -202,7 +222,7 @@ A **high-impact executive cockpit** delivering a consolidated view of portfolio 
 ### 💡 Idea Management
 
 <p align="center">
-  <img src="IMG/Ideas.jpeg" width="1200"/>
+  <img src="Gallery/Ideas.jpeg" width="900"/>
 </p>
 
 An **intuitive innovation workspace** designed to capture, evaluate, and mature ideas into actionable initiatives.
@@ -212,7 +232,7 @@ An **intuitive innovation workspace** designed to capture, evaluate, and mature 
 ### 📁 Project Execution
 
 <p align="center">
-  <img src="IMG/Projects.jpeg" width="1200"/>
+  <img src="Gallery/Projects.jpeg" width="900"/>
 </p>
 
 A **structured execution environment** for planning, ownership tracking, and delivery governance — optimized for control and transparency.
@@ -222,7 +242,7 @@ A **structured execution environment** for planning, ownership tracking, and del
 ### ⚠️ Risk & Issue Control
 
 <p align="center">
-  <img src="IMG/RisksAndIssues.jpeg" width="1200"/>
+  <img src="Gallery/RisksAndIssues.jpeg" width="900"/>
 </p>
 
 A **dedicated governance layer** providing clear prioritization, mitigation workflows, and full lifecycle tracking.
@@ -232,7 +252,7 @@ A **dedicated governance layer** providing clear prioritization, mitigation work
 ### 📈 Status & Reporting
 
 <p align="center">
-  <img src="IMG/Status.jpeg" width="1200"/>
+  <img src="Gallery/Status.jpeg" width="900"/>
 </p>
 
 A **refined reporting interface** delivering consistent, structured updates tailored for stakeholders at all levels.
@@ -242,7 +262,7 @@ A **refined reporting interface** delivering consistent, structured updates tail
 ### 📂 Document Center
 
 <p align="center">
-  <img src="IMG/Docs.jpeg" width="1200"/>
+  <img src="Gallery/Docs.jpeg" width="900"/>
 </p>
 
 A **centralized knowledge hub** ensuring seamless access to critical documents and analytical outputs.
@@ -252,7 +272,7 @@ A **centralized knowledge hub** ensuring seamless access to critical documents a
 ### 🔔 Notifications
 
 <p align="center">
-  <img src="IMG/notifications.jpeg" width="1200"/>
+  <img src="Gallery/notifications.jpeg" width="900"/>
 </p>
 
 A **streamlined alert system** that keeps users informed without noise — focused, timely, actionable.
@@ -262,7 +282,7 @@ A **streamlined alert system** that keeps users informed without noise — focus
 ### 👤 User Profile
 
 <p align="center">
-  <img src="IMG/Profile.jpeg" width="1200"/>
+  <img src="Gallery/Profile.jpeg" width="900"/>
 </p>
 
 A **personalized control space** for managing identity, preferences, and contextual access.
@@ -272,7 +292,7 @@ A **personalized control space** for managing identity, preferences, and context
 ### ⚙️ Settings
 
 <p align="center">
-  <img src="IMG/settings.jpeg" width="1200"/>
+  <img src="Gallery/settings.jpeg" width="900"/>
 </p>
 
 A **flexible configuration layer** with user-centric controls, customization options, and a clean UX.
@@ -282,7 +302,7 @@ A **flexible configuration layer** with user-centric controls, customization opt
 ### 🤖 AI Assistant
 
 <p align="center">
-  <img src="IMG/AiAssestant.jpeg" width="1200"/>
+  <img src="Gallery/AiAssestant.jpeg" width="900"/>
 </p>
 
 An **embedded AI co-pilot** that enhances productivity through contextual insights, recommendations, and intelligent assistance.
